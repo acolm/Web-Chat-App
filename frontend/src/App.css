@@ -1,0 +1,208 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.clicker{
+  width:200px;
+  height: 200px;
+  font-size: 24px;
+}
+
+.user-counter{
+  padding: 5px;
+  background: black;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.dropMenu {
+  position: absolute;
+  z-index: 1;
+  background-color: #E8F0F2;
+  border-color: #6B7474;
+  border-radius: 10%;
+}
+
+.menu-button{
+  background-color: #4e4b88;
+  color: white;
+  border: none;
+  padding: 3px 5px;
+}
+
+.menu-button:hover {
+  background-color: #444088;
+}
+
+table.menuLeft {
+  margin-left:0%;
+}
+
+table.menuCenter {
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #EEF2F4;
+  padding: 20px 30px;  
+}
+
+.login-button{
+  background-color: #005A9C;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.login-button:hover{
+  background-color: #004E87;
+}
+
+.login-text{
+height: 25px;
+margin-bottom: 10px;
+border: none;
+border: solid 1px #ccc;
+border-radius: 5px;
+outline-color: #005A9C;
+}
+
+.send{
+  background-color: #365285;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 100;
+  transition: 0.3s;
+}
+
+.refresh{
+  background-color: #365285;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 50;
+  transition: 0.3s;
+}
+
+.send:hover{
+  background-color: #2E4670;
+}
+
+.like-button{
+  background-color: #f06871;
+  color: white;
+  border:none;
+  padding: 3px 5px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background-color: #ee4f5a;
+}
+
+h1.center {
+  text-align: center;
+}
+
+.chat-grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header  header header'
+    'adds adds main  users users'
+    'adds adds chat  users users'
+    'adds adds send users users';
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-columns: .1fr .1fr [main-start] 1fr [main-end] .1fr .1fr;
+  grid-template-rows: 100px [main-start] 500px [main-end] 100px;
+  background-color: #303131;
+  word-wrap: normal;
+  word-break: break-word;
+  border-radius: 10px;
+}
+
+.chat-grid-container div {
+  background-color: #dde7f0;
+  padding: 2px 0;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+}
+.adds {
+  grid-area: adds;
+}
+.main {
+  grid-area: main;
+  overflow-y: auto;
+}
+.users {
+  grid-area: users;
+}
+.footer {
+  grid-area: chat;
+}
+
+textarea:focus{
+  outline: none;
+}
+textarea {
+  resize: none;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  }
+  
+.chat-message{
+  padding: 3px;
+  text-align: left;
+}
+
+.chat-message:hover{
+background-color: #D5DCE2;
+}
+
+.user-list{
+  font-size: 22px;
+  text-align: left;
+  padding: 0px;
+  border-radius: 0;
+}
+
+.user-list:hover {
+  background-color: #4e4b88;
+  color: white;
+}
